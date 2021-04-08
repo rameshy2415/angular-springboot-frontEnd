@@ -1,0 +1,36 @@
+<!-- Below form is build based on formGroup -->
+<div class="custContainer">
+<form [formGroup]="loginDetails" (ngSubmit)="login()">
+  <div class="card m-3 customeCard row">
+  
+       <h3 class="card-header text-center">Employee Login</h3>
+      <div class="card-body">
+        <div class="row" *ngIf="displayFlag">
+          <div class="offset-lg 4 col-lg-4 offset-lg-4 align-self-center error-details alert alert-danger" role="alert">
+            <label>{{message}}<br>      
+            </label>                    
+         </div>
+        </div>
+          <div class="row">
+              <div class="coffset-lg 4 col-lg-4 offset-lg-4 align-self-center">
+                 <label>UserName:<br>
+                   <input type="text" class="form-control" formControlName="username">
+                 </label>                    
+              </div>
+               <div class="offset-lg 4 col-lg-4 offset-lg-4 align-self-center ">
+                <label>Password:<br>
+                  <input type="password" class="form-control" formControlName="password">
+                </label>                    
+             </div>             
+          </div>
+      </div>
+
+      <div class="card-footer text-center">
+          <button class="btn btn-primary mr-1" [disabled]="!loginDetails.valid">Login</button>          
+          <button class="btn btn-secondary mr-1" type="reset" (click)="onReset()">Reset</button>        
+
+      </div>
+ 
+  </div>
+</form>
+</div>

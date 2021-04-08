@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="container row">
+    <div class="offset-md-4 col-md-8  ">
+      <h2>Upload Image Features!!!</h2>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-6">
+      <input type="file" (change)="onFileChanged($event)">
+    </div>
+
+    <div class="col-md-6">
+      <input type="button" (click)="uploadImage()" value="Upload">  
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="offset-md-4 col-md-8  ">
+      <h2>Retrive Image Features!!!</h2>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <label>Enter File Name:</label>
+        <input type="text" name="file">
+      </div>
+      <div class="col-md-6">
+        <input type="button" placeholder="file name.." name="file" value="Retrive">
+      </div>
+    </div>
+
+</div>

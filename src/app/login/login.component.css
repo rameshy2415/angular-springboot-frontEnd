@@ -1,0 +1,32 @@
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin-top: 0px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: Arial;
+    margin-top: 12px;
+}
+
+.selectClass {
+    width: 221px !important;
+}
+
+.custContainer{
+	height: 550px;
+	height: auto !important; /* real browsers */
+	min-height: 100% !important;/* real browsers */
+}
+
+
+
+
+
+

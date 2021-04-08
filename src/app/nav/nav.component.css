@@ -1,0 +1,54 @@
+
+.container-fluid {
+    background: black;
+    height: 53px;
+}
+
+nav.navbar.navbar-inverse {
+    padding: 0px;
+}
+.navbar-header a{
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar {
+    border-radius: 0px !important; 
+}
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* .nav ul li {
+    padding: 15px 20px !important;
+    display: inline !important;
+}
+
+.navbar-right{   
+    display: inline-block !important;
+}
+
+.navbar-left{   
+    display: inline-block !important;
+} */
+
+.navbar ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	padding: 15px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	color: #e27552;
+    transition: .5s;
+}
